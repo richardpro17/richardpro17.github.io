@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Programacion for Beginners: Variables</title>
+	<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/58/58866.png">
+	<link rel="stylesheet" type="text/css" href="estilospro.css">
+	<style>
+	   @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Permanent+Marker&family=Prosto+One&family=Secular+One&family=Silkscreen&display=swap');
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+	</style>
+</head>
+<body>
+<header class="header">
+	<div>
+		<h1 id="p-title">PROGRAMACION FOR BEGINNERS</h1>
+	</div>
+</header>
+<nav id="nav-menu">
+	<ul>
+		<li><a href="index.html" class="active-menu">INICIO</a></li>
+		<li><a class="enlace" href="teoria.html">TEORIA</a></li>
+		<li><a class="enlace" href="diagramas.html">DIAGRAMAS</a></li>
+		<li><a class="enlace" href="dweb.html">DISEÑO WEB</a></li>
+		<li><a class="enlace" href="sintaxis.html">SINTAXIS</a></li>
+	</ul>
+</nav>
+
+<div style="height:auto;" id="div-seccion2">
+	
+<span id="OpenMenu"  onclick="openNav()">&#9776;</span>
+<aside id="LateralMenu" class="aside1">
+	<div>
+		<a href="javascript:void(0)" id="cerrar"class="closebtn" onclick="closeNav()">&times;</a>
+		<p>MENU DE NAVEGACION</p>
+	</div>
+	<ul >
+		<br>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>TEORIA DE LA PROGRAMACION</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="qprogramacion.html">Que es la programacion?</a>
+				<a id="sub" href="paraprogramacion.html">¿Para que sirve la programacion?</a>
+				<a id="sub" href="lenguaje-programacion.html">¿Que es un lenguaje de programacion?</a>
+				<a id="sub" href="algoritmo.html">¿Que es un algoritmo?</a>
+				<a id="sub" href="vidaprogramacion.html">¿Por que aprender a programar puede cambiar tu vida?</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>DIAGRAMAS DE FLUJO</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="qdiagramas.html">¿Que es un diagrama de flujo?</a>
+				<a id="sub" href="estrucdiagrama.html">Estructuras y parte de un diagrama de flujo</a>
+				<a id="sub" href="hacerdiagramas.html">¿Como hacer un diagrama de flujo?</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>CREACION Y DISEÑO WEB</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="qpaginaweb.html">¿Que es una pagina web, para que se usa y sirve?</a>
+				<a id="sub" href="pasosweb.html">Pasos para crear tu sitio web</a>
+				<a id="sub" href="htmltuto.html">HTML</a>
+				<a id="sub" href="csstuto.html">CSS</a>
+				<a id="sub" href="jstuto.html">JAVASCRIPT</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>SINTAXIS EN LA PROGRAMACION</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="variables.html">VARIABLES</a>
+				<a id="sub" href="secuenciales.html">SECUENCIALES</a>
+				<a id="sub" href="ifelse.html">CONDICIONALES ESTRUCTURAS IF/ELSE</a>
+				<a id="sub" href="bucles.html">BUCLES</a>
+			</div>
+		</li>		
+		
+	</ul>
+</aside>
+
+	<section id="posts2"><!--CUARTA SECCION SINTAXIS-->
+		<div><span id="directorio-t">SINTAXIS EN LA PROGRAMACION</span></div>
+	<h2 id="section-title">Variables</h2>
+	 <article>
+	   <p>Aprenderas lo basico como el concepto de variables y su uso, tipos de estas para usarla en los lenguajes de programacion de forma global sin tener que volver a repasarlas. </p><br>
+
+	   <p>Para empezar una variable se define como una caracteristica o condicion que esta sujeta a siempre tener cambios, la variable se usa para asumir el valor especifico de uno o varios individuos. <br>Estas variables esta formada por un espacion en el sistema de almacenaje de un ordenador y un identificador para nombrar esta variable.</p><br>
+
+	   <p>TIPOS DE VARIABLES Y COMO DECLARARLAS:</p><br>
+
+	   <ul>
+	   	<li>1.-Numerica: en estas variables como su nombre indica, podemos almacenar numeros por ejemplo:<br>
+	   		int numero = <strong>10</strong>
+	   	</li>
+	   	<li>2.-Cadena de texto: en el caso de estas variables se almacena texto al estar entre comillas. Hay de longitud fija y de longitud variable por ejemplo:<br>char str[] = "Pro"; palabra = "Hola";
+	   	</li>
+	   	<li>3.-Booleanas: tienen un valor logico el cual es "true" o "false", otra forma de representacion de estos valores es por medio del 0 y el -1.</li>
+	   	<li>4.-HTML: estas variables se identifican por medio de su (id), estas requieren un selector para asignar los elementos a la variable.</li>
+	   	<li>5.-Arreglos: Estas variables sirven para almacenar mas de un elemento junto con otras varialbes, solo requieres redactarlo con corchetes y separarlos con una coma como en este ejemplo:<br> Numeros[]= (2, 5, 10, 32, 100)</li>
+	   	<li>6.-Objetos: Es para agregar objetos y asignarles sus propiedades , la diferencia de esta es la forma en la que se declara por ejemplo <br> {color: verde}</li>
+	   </ul>
+
+
+		<br><br><p>
+	   ENLACES RECOMENDADOS SOBRE EL TEMA:
+	   <div id="enlaces">
+	   	<div id="imgref">
+	   		<img style="margin: 1px 4px -6px;" src="https://icons-for-free.com/iconfiles/png/512/programming+tags+icon-1320087273222563498.png"><a target="_blank" href="https://www.crehana.com/blog/desarrollo-web/que-es-variable-programacion/">¿Que es una variable en la programacion?</a>
+	   	</div>
+	   	<div id="imgref">
+	   		<img style="margin: 1px 4px -6px;" src="https://icons-for-free.com/iconfiles/png/512/programming+tags+icon-1320087273222563498.png"><a target="_blank" href="https://es.wikipedia.org/wiki/Variable_(programaci%C3%B3n)#:~:text=En%20programaci%C3%B3n%2C%20una%20variable%20est%C3%A1,desconocida%2C%20es%20decir%20un%20valor.">Variable (programación)</a>
+	   	</div>
+	   	<div id="imgref">
+	   		<img  style="margin: 1px 4px -6px;" src="https://icons-for-free.com/iconfiles/png/512/programming+tags+icon-1320087273222563498.png"><a target="_blank" href="https://www.geeksforgeeks.org/strings-in-c-2/">Strings in C</a>
+	   	</div>
+	   	
+	   	<!---
+libro:https://www.iconpacks.net/icons/2/free-opened-book-icon-3169-thumb.png
+diagrama:https://cdn-icons-png.flaticon.com/512/1172/1172356.png
+html:https://cdn-icons-png.flaticon.com/512/919/919827.png
+css:https://cdn-icons-png.flaticon.com/512/919/919826.png
+js:https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg
+sintax:https://icons-for-free.com/iconfiles/png/512/programming+tags+icon-1320087273222563498.png
+	   		--->
+	   </div>
+	 </p>
+
+	 </article>
+	</section>
+	<br>	
+</div>
+
+<footer class="footer-pro">
+	<p>&#8482; Ricardo Montalvo <strong>"RP"</strong> &copy; 2022-2023</p>
+</footer>
+
+<script>
+function openNav() {
+  document.getElementById("LateralMenu").style.width = "25%";
+  document.getElementById("OpenMenu").style.display="none";
+  document.getElementById("cerrar").style.display="block";
+}
+
+function closeNav() {
+  document.getElementById("LateralMenu").style.width = "0";
+  document.getElementById("OpenMenu").style.display="block";
+  document.getElementById("cerrar").style.display="none";
+}
+</script>
+</body>
+</html>

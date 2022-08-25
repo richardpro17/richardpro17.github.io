@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Programacion for Beginners: BUCLES</title>
+	<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/58/58866.png">
+	<link rel="stylesheet" type="text/css" href="estilospro.css">
+	<style>
+	   @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Permanent+Marker&family=Prosto+One&family=Secular+One&family=Silkscreen&display=swap');
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+	</style>
+</head>
+<body>
+<header class="header">
+	<div>
+		<h1 id="p-title">PROGRAMACION FOR BEGINNERS</h1>
+	</div>
+</header>
+<nav id="nav-menu">
+	<ul>
+		<li><a href="index.html" class="active-menu">INICIO</a></li>
+		<li><a class="enlace" href="teoria.html">TEORIA</a></li>
+		<li><a class="enlace" href="diagramas.html">DIAGRAMAS</a></li>
+		<li><a class="enlace" href="dweb.html">DISEÑO WEB</a></li>
+		<li><a class="enlace" href="sintaxis.html">SINTAXIS</a></li>
+	</ul>
+</nav>
+
+<div style="height:auto;" id="div-seccion2">
+	
+<span id="OpenMenu"  onclick="openNav()">&#9776;</span>
+<aside id="LateralMenu" class="aside1">
+	<div>
+		<a href="javascript:void(0)" id="cerrar"class="closebtn" onclick="closeNav()">&times;</a>
+		<p>MENU DE NAVEGACION</p>
+	</div>
+	<ul >
+		<br>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>TEORIA DE LA PROGRAMACION</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="qprogramacion.html">Que es la programacion?</a>
+				<a id="sub" href="paraprogramacion.html">¿Para que sirve la programacion?</a>
+				<a id="sub" href="lenguaje-programacion.html">¿Que es un lenguaje de programacion?</a>
+				<a id="sub" href="algoritmo.html">¿Que es un algoritmo?</a>
+				<a id="sub" href="vidaprogramacion.html">¿Por que aprender a programar puede cambiar tu vida?</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>DIAGRAMAS DE FLUJO</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="qdiagramas.html">¿Que es un diagrama de flujo?</a>
+				<a id="sub" href="estrucdiagrama.html">Estructuras y parte de un diagrama de flujo</a>
+				<a id="sub" href="hacerdiagramas.html">¿Como hacer un diagrama de flujo?</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>CREACION Y DISEÑO WEB</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="qpaginaweb.html">¿Que es una pagina web, para que se usa y sirve?</a>
+				<a id="sub" href="pasosweb.html">Pasos para crear tu sitio web</a>
+				<a id="sub" href="htmltuto.html">HTML</a>
+				<a id="sub" href="csstuto.html">CSS</a>
+				<a id="sub" href="jstuto.html">JAVASCRIPT</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>SINTAXIS EN LA PROGRAMACION</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="variables.html">VARIABLES</a>
+				<a id="sub" href="secuenciales.html">SECUENCIALES</a>
+				<a id="sub" href="ifelse.html">CONDICIONALES ESTRUCTURAS IF/ELSE</a>
+				<a id="sub" href="bucles.html">BUCLES</a>
+			</div>
+		</li>		
+		
+	</ul>
+</aside>
+
+	<section id="posts2"><!--CUARTA SECCION SINTAXIS-->
+		<div><span id="directorio-t">SINTAXIS EN LA PROGRAMACION</span></div>
+	<h2 id="section-title">BUCLES </h2>
+	 <article>
+	   <p>Los bucles son una estructura de control de la programacion usada para realizar repeticiones, mediante los bucles podemos realizar la ejecucuon de una o varias sentencias de forma repetida</p><br>
+
+	   <p>Los bucles en la programacion tambien tienen sus aplicaciones en la vida real, como en procesos industriales repetitivos, en problemas donde se busque repetir lo mismo de forma facil y sencilla y demas usos de la cotidianidad.</p><br>
+
+	   <p>En lugar de escribir:<br>
+	   	printf("Hola mundo");<br>
+	   	printf("Hola mundo");<br>
+	   	printf("Hola mundo");<br>
+	   	printf("Hola mundo");<br>
+	   </p><br>
+
+	   <p>Deberias usar uno de los bucles que te explicare brevemente:<br>
+	   	WHILE: permite repetir la ejecucion de un grupo de instrucciones mientras se cumpla una condicion, es decir mientras tenga la condicion de True, Ejemplo: <br><br>
+	   	while condicion{<br>
+&nbsp;&nbsp;&nbsp;printf("Hola mundo");<br>
+	   	&nbsp;&nbsp;}<br><br>
+
+	   	DO: el bucle do hace una accion despues las sentencias mientras su cumple la condicion al final del bucle, Ejemplo: <br><br>
+	   &nbsp;&nbsp;	do {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("Hola mundo");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aumento;<br>
+&nbsp;&nbsp;} while (condición);<br>
+			FOR:El bucle for crea un bucle de 3 expresiones opcionales por lo general se usan los de la siguiente image:<br><br>
+			<img src="https://4.bp.blogspot.com/-e0XC4_SNzdY/VuS-FftmIHI/AAAAAAAABDI/zpSg7xh_V3oIePQv5WhC5SVb0Pljo9Ozw/s1600/bucle-for.PNG" height="150px" width="350px" title="estructura del bucle for">
+			<br>
+			Ejemplo de sintaxis:<br>
+&nbsp;&nbsp;&nbsp;for(inicializaion de variables, condicion, iteracion){<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("Hola mundo");<br>
+&nbsp;&nbsp;&nbsp;			}<br><br>
+
+	   </p>
+
+
+	   <!--EJERCICIO DIDACTICO
+	   -->
+		<br><br><p>
+	   ENLACES RECOMENDADOS SOBRE EL TEMA:
+	   <div id="enlaces">
+	   	<div id="imgref">
+	   		<img style="margin: 1px 4px -6px;" src="https://icons-for-free.com/iconfiles/png/512/programming+tags+icon-1320087273222563498.png"><a target="_blank" href="https://desarrolloweb.com/home/bucles">Bucles</a>
+	   	</div>
+	   	<div id="imgref">
+	   		<img style="margin: 1px 4px -6px;" src="https://icons-for-free.com/iconfiles/png/512/programming+tags+icon-1320087273222563498.png"><a target="_blank" href="https://www.w3schools.com/js/js_loop_for.asp">JAVASCRIPT for Loop</a>
+	   	</div>
+	   	<div id="imgref">
+	   		<img  style="margin: 1px 4px -6px;" src="https://icons-for-free.com/iconfiles/png/512/programming+tags+icon-1320087273222563498.png"><a target="_blank" href="https://disenowebakus.net/bucles.php">Bucles ejemplos y sintaxis - Ciclos While, Do While y For</a>
+	   	</div>
+		<div id="imgref">
+	   		<img  style="margin: 1px 4px -6px;" src="https://icons-for-free.com/iconfiles/png/512/programming+tags+icon-1320087273222563498.png"><a target="_blank" href="https://www.mclibre.org/consultar/python/ejercicios/ej-while-1.html">Bucle while - Ejercicios (1)</a>
+	   	</div>
+	   	
+	   	<!---
+libro:https://www.iconpacks.net/icons/2/free-opened-book-icon-3169-thumb.png
+diagrama:https://cdn-icons-png.flaticon.com/512/1172/1172356.png
+html:https://cdn-icons-png.flaticon.com/512/919/919827.png
+css:https://cdn-icons-png.flaticon.com/512/919/919826.png
+js:https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg
+sintax:https://icons-for-free.com/iconfiles/png/512/programming+tags+icon-1320087273222563498.png
+	   		--->
+	   </div>
+	 </p>
+	 </article>
+	</section>
+	<br>	
+</div>
+
+<footer class="footer-pro">
+	<p>&#8482; Ricardo Montalvo <strong>"RP"</strong> &copy; 2022-2023</p>
+</footer>
+
+<script>
+function openNav() {
+  document.getElementById("LateralMenu").style.width = "25%";
+  document.getElementById("OpenMenu").style.display="none";
+  document.getElementById("cerrar").style.display="block";
+}
+
+function closeNav() {
+  document.getElementById("LateralMenu").style.width = "0";
+  document.getElementById("OpenMenu").style.display="block";
+  document.getElementById("cerrar").style.display="none";
+}
+</script>
+</body>
+</html>

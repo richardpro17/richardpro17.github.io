@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Programacion for Beginners:HTML</title>
+	<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/58/58866.png">
+	<link rel="stylesheet" type="text/css" href="estilospro.css">
+	<style>
+	   @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Permanent+Marker&family=Prosto+One&family=Secular+One&family=Silkscreen&display=swap');
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+	</style>
+</head>
+<body>
+<header class="header">
+	<div>
+		<h1 id="p-title">PROGRAMACION FOR BEGINNERS</h1>
+	</div>
+</header>
+<nav id="nav-menu">
+	<ul>
+		<li><a href="index.html" class="active-menu">INICIO</a></li>
+		<li><a class="enlace" href="teoria.html">TEORIA</a></li>
+		<li><a class="enlace" href="diagramas.html">DIAGRAMAS</a></li>
+		<li><a class="enlace" href="dweb.html">DISEÑO WEB</a></li>
+		<li><a class="enlace" href="sintaxis.html">SINTAXIS</a></li>
+	</ul>
+</nav>
+
+<div style="height:auto;" id="div-seccion2">
+	
+<span id="OpenMenu"  onclick="openNav()">&#9776;</span>
+<aside id="LateralMenu" class="aside1">
+	<div>
+		<a href="javascript:void(0)" id="cerrar"class="closebtn" onclick="closeNav()">&times;</a>
+		<p>MENU DE NAVEGACION</p>
+	</div>
+	<ul >
+		<br>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>TEORIA DE LA PROGRAMACION</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="qprogramacion.html">Que es la programacion?</a>
+				<a id="sub" href="paraprogramacion.html">¿Para que sirve la programacion?</a>
+				<a id="sub" href="lenguaje-programacion.html">¿Que es un lenguaje de programacion?</a>
+				<a id="sub" href="algoritmo.html">¿Que es un algoritmo?</a>
+				<a id="sub" href="vidaprogramacion.html">¿Por que aprender a programar puede cambiar tu vida?</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>DIAGRAMAS DE FLUJO</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="qdiagramas.html">¿Que es un diagrama de flujo?</a>
+				<a id="sub" href="estrucdiagrama.html">Estructuras y parte de un diagrama de flujo</a>
+				<a id="sub" href="hacerdiagramas.html">¿Como hacer un diagrama de flujo?</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>CREACION Y DISEÑO WEB</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="qpaginaweb.html">¿Que es una pagina web, para que se usa y sirve?</a>
+				<a id="sub" href="pasosweb.html">Pasos para crear tu sitio web</a>
+				<a id="sub" href="htmltuto.html">HTML</a>
+				<a id="sub" href="csstuto.html">CSS</a>
+				<a id="sub" href="jstuto.html">JAVASCRIPT</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>SINTAXIS EN LA PROGRAMACION</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="variables.html">VARIABLES</a>
+				<a id="sub" href="secuenciales.html">SECUENCIALES</a>
+				<a id="sub" href="ifelse.html">CONDICIONALES ESTRUCTURAS IF/ELSE</a>
+				<a id="sub" href="bucles.html">BUCLES</a>
+			</div>
+		</li>		
+		
+	</ul>
+</aside>
+
+	<section id="posts2"><!--TERCERA SECCION DISEÑO WEB-->
+		<div><span id="directorio-t">CREACION Y DISEÑO WEB</span></div>
+	<h2 id="section-title">HTML</h2>
+	 <article><!--IDEA DE SUBTEMAS FUNDAMENTOS DE LA WEB-->
+	   <p>A continuacion te enseñare de forma breve html y sus conceptos basicos</p><br>
+	   
+	   <p>Debido a que es demasiada informacion, trataremos de ser lo mas breve posible y plantear
+	   algunos ejercicios que te pueden ayudar a reforzar tu conocimiento sobre el tema de HTML, por html se empieza
+	   para poder crear estructuras basicas hasta complejas de sitios web, son infinidad de etiquetas que debes poco a poco
+	   experimentar por ti mismo, asi que a continuacion empezaremos.</p><br><br>
+	   
+	   <p>¿QUE ES HTML?</p>
+	   <p>HTML no es un lenguaje de programacion, suena raro verdad, pues el ("Hypertext Markup Language") es un lenguaje de marcado, 
+	   en resumen es un lenguaje que le dice a los navegadores web como estructuras la pagina que nuestros ojos ven.<br><br>
+	   
+	   HTML consiste en crear una serie de elementos que ayudan a las diferentes partes del contenido para que tu decidas de que forma aparecer y actuar.
+	   </p>
+	   
+	   <p>PARTES BASICAS DE UN DOCUMENTO HTML</p><br>
+	   <p>La mayoria de paginas web siempre mantienen una formalidad en sus estructura para que sea facil, accesible para los desarrolladores y la experiencia de usuario.</p><br>
+	   
+	   <p>Encabezado: La parte de arriba que por lo general contiene el titulo de la pagina de forma impresionante, logo de tu marca etc, inclusive un lema, no suele
+	   alterarse dentro de la misma pagina web.</p><br>
+	   
+	   <p>Menu de navegacion: La parte donde se acomoda desde un buscador, un menu interactivo para que los usuarios naveguen de forma sencilla y rapida dentro del sitio web.</p><br>
+		
+	   <p>Contenido principal: Es la gran parte de informacion que abarca la mayoria de la pagima, esta parte siempre esta en constante cambio dependiendo los subtemas o temas del sitio.</p>
+	   <br>
+	   <p>Barra Lateral: La barra lateral se usa como menu de navegacion o tambien algun tipo de informacion adicional, publicida etc, la mayoria de veces el uso que se la esta relacionado
+	   con el contenido principal mostrado en ese momento.</p><br>
+	   
+	   <p>Pie de pagina: el pie de pagina la mayoria de veces esta hasta abajo, contiene letras pequeñas e informacion relevante de contacto del autor o marca, no suele ser tan importante pero forma parte del contenido de una pagina web.</p><br>
+	   <br>
+	   <img src="https://i.pinimg.com/originals/f3/18/55/f31855b8f08e7687350b9fc49a77d839.gif" title="Estructura de una pagina" ><br><br>
+
+	   <p>Ahora pasaremos de forma breve a explicar varios conceptos del HTML que puedes ir haciendo en tu editor de texto favorito y abrirlo en tu navegador preferido.</p><br>
+
+	   <p>Esquematizacion basica de un documento HTML:</p><br>
+	   <p>Un archivo html siempre empieza con la etiqueta HTML.<br>
+
+	   	Por otra parte, todo el documento HTML consta de dos partes principales, la cabecera HEAD(head) y el cuerpo del documento (body).<br><br>
+
+	   	<p>1.-La cabecera contiene informacion destinada para el navegador que queda oculta al usuario. Su etiqueta es "HEAD" encerrado en <"Head>".</p><br>
+
+	   	<p>2.-El cuerpo del documento Body es el que el usuario puede ver si etiqueta es <"Body>".</p><br>
+	   	</p>
+
+	   	<p>ALGUNAS DE LAS ETIQUETAS MAS USADAS: </p>
+
+	   	<img src="https://tutorial.eyehunts.com//wp-content/uploads/2019/03/HTML-P-tag-HTML-paragraph-tag-break-font-size-line-space-indent.png" title="Etiqueta <p>">
+
+	   	<img src="https://seranking.com/es/blog/wp-content/uploads/sites/13/2021/05/jerarquia-por-niveles-encabezados-html.png" title="Etiqueta <h> de titulos">
+
+	   	<img src="https://media.geeksforgeeks.org/wp-content/uploads/20210821160706/Capture1.PNG" title="div tag">
+
+
+	<br><br><p>
+	   ENLACES RECOMENDADOS SOBRE EL TEMA:
+	   <div id="enlaces">
+	   	<div id="imgref">
+	   		<img style="margin: 1px 4px -6px;" src="https://cdn-icons-png.flaticon.com/512/919/919827.png"><a target="_blank" href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals">HTML Introduction Fundamentals</a>
+	   	</div>
+	   	<div id="imgref">
+	   		<img style="margin: 1px 4px -6px;" src="https://cdn-icons-png.flaticon.com/512/919/919827.png"><a target="_blank" href="https://www.w3schools.com/html/html_elements.asp">HTML Elements</a>
+	   	</div>
+	   	<div id="imgref">
+	   		<img style="margin: 1px 4px -6px;" src="https://cdn-icons-png.flaticon.com/512/919/919827.png"><a target="_blank" href="https://www.w3schools.com/html/html_attributes.asp">HTML Attributes</a>
+	   	</div>
+	   	<div id="imgref">
+	   		<img style="margin: 1px 4px -6px;" src="https://cdn-icons-png.flaticon.com/512/919/919827.png"><a target="_blank" href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started">HTML Getting Started</a>
+	   	</div>
+	   	<div id="imgref">
+	   		<img style="margin: 1px 4px -6px;" src="https://cdn-icons-png.flaticon.com/512/919/919827.png"><a target="_blank" href="html_1.html#:~:text=Un%20documento%20HTML%20comienza%20siempre,el%20fin%20de%20dicha%20acci%C3%B3n.">HTML Basico</a>
+	   	</div>
+	   	
+	   	<!---
+libro:https://www.iconpacks.net/icons/2/free-opened-book-icon-3169-thumb.png
+diagrama:https://cdn-icons-png.flaticon.com/512/1172/1172356.png
+html:https://cdn-icons-png.flaticon.com/512/919/919827.png
+css:https://cdn-icons-png.flaticon.com/512/919/919826.png
+js:https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg
+sintax:https://icons-for-free.com/iconfiles/png/512/programming+tags+icon-1320087273222563498.png
+	   		--->
+	   </div>
+	 </p>
+	 </article>
+	
+	</section>
+	<br>
+	<!-- https://metroui.org.ua/sidenavigation.html -->
+	
+</div><br>
+
+<footer class="footer-pro">
+	<p>&#8482; Ricardo Montalvo <strong>"RP"</strong> &copy; 2022-2023</p>
+</footer>
+<script>
+function openNav() {
+  document.getElementById("LateralMenu").style.width = "25%";
+  document.getElementById("OpenMenu").style.display="none";
+  document.getElementById("cerrar").style.display="block";
+}
+
+function closeNav() {
+  document.getElementById("LateralMenu").style.width = "0";
+  document.getElementById("OpenMenu").style.display="block";
+  document.getElementById("cerrar").style.display="none";
+}
+</script>
+</body>
+</html>

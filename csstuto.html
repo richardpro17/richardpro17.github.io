@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Programacion for Beginners:CSS</title>
+	<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/58/58866.png">
+	<link rel="stylesheet" type="text/css" href="estilospro.css">
+	<style>
+	   @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Permanent+Marker&family=Prosto+One&family=Secular+One&family=Silkscreen&display=swap');
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+	</style>
+</head>
+<body>
+<header class="header">
+	<div>
+		<h1 id="p-title">PROGRAMACION FOR BEGINNERS</h1>
+	</div>
+</header>
+<nav id="nav-menu">
+	<ul>
+		<li><a href="index.html" class="active-menu">INICIO</a></li>
+		<li><a class="enlace" href="teoria.html">TEORIA</a></li>
+		<li><a class="enlace" href="diagramas.html">DIAGRAMAS</a></li>
+		<li><a class="enlace" href="dweb.html">DISEÑO WEB</a></li>
+		<li><a class="enlace" href="sintaxis.html">SINTAXIS</a></li>
+	</ul>
+</nav>
+
+<div style="height:auto;" id="div-seccion2">
+	
+<span id="OpenMenu"  onclick="openNav()">&#9776;</span>
+<aside id="LateralMenu" class="aside1">
+	<div>
+		<a href="javascript:void(0)" id="cerrar"class="closebtn" onclick="closeNav()">&times;</a>
+		<p>MENU DE NAVEGACION</p>
+	</div>
+	<ul >
+		<br>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>TEORIA DE LA PROGRAMACION</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="qprogramacion.html">Que es la programacion?</a>
+				<a id="sub" href="paraprogramacion.html">¿Para que sirve la programacion?</a>
+				<a id="sub" href="lenguaje-programacion.html">¿Que es un lenguaje de programacion?</a>
+				<a id="sub" href="algoritmo.html">¿Que es un algoritmo?</a>
+				<a id="sub" href="vidaprogramacion.html">¿Por que aprender a programar puede cambiar tu vida?</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>DIAGRAMAS DE FLUJO</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="qdiagramas.html">¿Que es un diagrama de flujo?</a>
+				<a id="sub" href="estrucdiagrama.html">Estructuras y parte de un diagrama de flujo</a>
+				<a id="sub" href="hacerdiagramas.html">¿Como hacer un diagrama de flujo?</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>CREACION Y DISEÑO WEB</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="qpaginaweb.html">¿Que es una pagina web, para que se usa y sirve?</a>
+				<a id="sub" href="pasosweb.html">Pasos para crear tu sitio web</a>
+				<a id="sub" href="htmltuto.html">HTML</a>
+				<a id="sub" href="csstuto.html">CSS</a>
+				<a id="sub" href="jstuto.html">JAVASCRIPT</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn"><h3>SINTAXIS EN LA PROGRAMACION</h3></a>
+			<div class="dropdown-content">
+				<a id="sub" href="variables.html">VARIABLES</a>
+				<a id="sub" href="secuenciales.html">SECUENCIALES</a>
+				<a id="sub" href="ifelse.html">CONDICIONALES ESTRUCTURAS IF/ELSE</a>
+				<a id="sub" href="bucles.html">BUCLES</a>
+			</div>
+		</li>		
+		
+	</ul>
+</aside>
+
+	<section id="posts2"><!--TERCERA SECCION DISEÑO WEB-->
+		<div><span id="directorio-t">CREACION Y DISEÑO WEB</span></div>
+	<h2 id="section-title">CSS</h2>
+	 <article><!--IDEA DE SUBTEMAS FUNDAMENTOS DE LA WEB-->
+	   <p>A continuacion te enseñare de forma breve CSS y sus conceptos basicos</p><br>
+	   <p>De seguro si ya has aprendido algo de HTML te habras dado cuenta de que tiene ciertas limitaciones en el diseño, ya que en los tiempos donde se remonta su nulo uso de estilos y era nada mas informacion vacia quieres tu experimentar para mas.</p><br>
+
+	   <p>La razon de eso es por que las paginas actuales usas la <strong>hoja de estilos en cascada</strong> o mejor conocido como el CSS, ahora te ayudaremos a comprender los conceptos basicos de este lenguaje de etiquetado y como funciona y se aplica en los sitios web actuales.</p><br>
+
+	   <p>QUE ES EL CSS?</p><br>
+	   <ul>
+	   	<li>CSS significa Cascading Style Sheet (Hojas de estilo en cascada)</li>
+	   	<li>El lenguaje CSS describe como se mostraran los elementos HTML en pantalla</li>
+	   	<li>CSS ahorra mucho trabajo al desarrollador, ya que permite controlar todo el diseño de varias paginas web al mismo tiempo</li>
+	   	<li>Todas las hojas de estilo se almacenan externamente en archivos CSS</li>
+	   </ul><br>
+
+	   <p>Aprender CSS a la perfeccion puede ser una tarea abrumadora, ya que para dominar esto primero debes saber que todo lo que tienes en mente de como quieres que se vea tu pagina web es posible mayoritariamente siempre al CSS.</p><br>
+
+	   <p>FORMAS EN LAS QUE SE USA EL CSS Y EXPLICACIONES DE ESTAS</p>
+	   <ul>
+	   	<li>Hojas de estilos externas</li>
+	   	<li>Hojas de estilos interna</li>
+	   	<li>Estilos en linea</li>
+	   </ul>
+
+	   <p>HOJAS DE ESTILOS EXTERNA:Esta hoja de estilos externa se carga en un archivo aparte que puede estar enlazado a diferentes partes del sitio web o todo en un mismo css para mayor estrategia, la forma de hacer referencia a este es usando el elemento <pre style="lang:default; decode:true; white-space: pre-wrap;"><"link>"</pre></p><br>
+
+	   	<p>Forma de agregarlo:</p>
+	   	<img src="https://misapuntesyacimientos.files.wordpress.com/2016/02/cssrefext-3_thumb.png?w=349&h=228" title="agregar css externo">
+
+	   <p>HOJA DE ESTILOS INTERNA: esta hoja de estilos te permite agregar estilos dentro del mismo html por medio de la estiquea <pre style="lang:default; decode:true; white-space: pre-wrap;"><"head>"</pre><p> y una vez estes dentro de head deberas escribir la etiqueta STYLE para iniciar el metodo</p></p><br>
+	   <p>Forma de agregarlo:</p>
+	   <img src="https://programmerclick.com/images/775/ce96f810bcb54609e9e63340d953789f.png" title="css interno">
+	  
+	  	<p>Estilos en linea: Los estilos en linea son los que se usan de prioridad mas alta para sobreescritura de estilos, los puedes usar en etiquetas que ya tengan estilos pero requieras cambiar un atributo de estas sin alterar los demas estilos.</p><br>
+
+	  	<p>Forma de agregarlo:</p>
+	  	<img src="https://miro.medium.com/max/1400/1*vMDthM9qBLsONvClseM_ew.png">
+
+		<br><br><p>
+	   ENLACES RECOMENDADOS SOBRE EL TEMA:
+	   <div id="enlaces">
+	   	<div id="imgref">
+	   		<img style="margin: 1px 4px -6px;" src="https://cdn-icons-png.flaticon.com/512/919/919826.png"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics#css_all_about_boxes">CSS Getting Startes</a>
+	   	</div>
+	   	<div id="imgref">
+	   		<img style="margin: 1px 4px -6px;" src="https://cdn-icons-png.flaticon.com/512/919/919826.png"><a target="_blank" href="https://developer.mozilla.org/es/docs/Web/CSS/Tutorials">CSS TUTORIALS</a>
+	   	</div>
+	   	<div id="imgref">
+	   		<img style="margin: 1px 4px -6px;" src="https://cdn-icons-png.flaticon.com/512/919/919826.png"><a target="_blank" href="https://www.naiarafernandez.com/conceptos-basicos-css/#:~:text=CSS%20significa%20Cascading%20Style%20Sheets,se%20almacenan%20en%20archivos%20CSS.">CSS Conceptos Basicos</a>
+	   	</div>
+	   	
+	   	<!---
+libro:https://www.iconpacks.net/icons/2/free-opened-book-icon-3169-thumb.png
+diagrama:https://cdn-icons-png.flaticon.com/512/1172/1172356.png
+html:https://cdn-icons-png.flaticon.com/512/919/919827.png
+css:https://cdn-icons-png.flaticon.com/512/919/919826.png
+js:https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg
+sintax:https://icons-for-free.com/iconfiles/png/512/programming+tags+icon-1320087273222563498.png
+	   		--->
+	   </div>
+	 </p>
+	 </article>
+	
+	</section>
+	<br>
+	<!-- https://metroui.org.ua/sidenavigation.html -->
+	
+</div><br>
+
+<footer class="footer-pro">
+	<p>&#8482; Ricardo Montalvo <strong>"RP"</strong> &copy; 2022-2023</p>
+</footer>
+<script>
+function openNav() {
+  document.getElementById("LateralMenu").style.width = "25%";
+  document.getElementById("OpenMenu").style.display="none";
+  document.getElementById("cerrar").style.display="block";
+}
+
+function closeNav() {
+  document.getElementById("LateralMenu").style.width = "0";
+  document.getElementById("OpenMenu").style.display="block";
+  document.getElementById("cerrar").style.display="none";
+}
+</script>
+</body>
+</html>
