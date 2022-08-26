@@ -86,6 +86,7 @@
 		<div><span id="directorio-t">CREACION Y DISEÑO WEB</span></div>
 	<h2 id="section-title">CSS</h2>
 	 <article><!--IDEA DE SUBTEMAS FUNDAMENTOS DE LA WEB-->
+	 	<div id="oculto">
 	   <p>A continuacion te enseñare de forma breve CSS y sus conceptos basicos</p><br>
 	   <p>De seguro si ya has aprendido algo de HTML te habras dado cuenta de que tiene ciertas limitaciones en el diseño, ya que en los tiempos donde se remonta su nulo uso de estilos y era nada mas informacion vacia quieres tu experimentar para mas.</p><br>
 
@@ -111,16 +112,27 @@
 	   <p>HOJAS DE ESTILOS EXTERNA:Esta hoja de estilos externa se carga en un archivo aparte que puede estar enlazado a diferentes partes del sitio web o todo en un mismo css para mayor estrategia, la forma de hacer referencia a este es usando el elemento <pre style="lang:default; decode:true; white-space: pre-wrap;"><"link>"</pre></p><br>
 
 	   	<p>Forma de agregarlo:</p>
-	   	<img src="https://misapuntesyacimientos.files.wordpress.com/2016/02/cssrefext-3_thumb.png?w=349&h=228" title="agregar css externo">
+	   	<img style="width:370px;" src="https://misapuntesyacimientos.files.wordpress.com/2016/02/cssrefext-3_thumb.png?w=349&h=228" title="agregar css externo">
 
-	   <p>HOJA DE ESTILOS INTERNA: esta hoja de estilos te permite agregar estilos dentro del mismo html por medio de la estiquea <pre style="lang:default; decode:true; white-space: pre-wrap;"><"head>"</pre><p> y una vez estes dentro de head deberas escribir la etiqueta STYLE para iniciar el metodo</p></p><br>
+	   <p>HOJA DE ESTILOS INTERNA: esta hoja de estilos te permite agregar estilos dentro del mismo html por medio de la etiquetas <pre style="lang:default; decode:true; white-space: pre-wrap;"><"head>"</pre><p> y una vez estes dentro de head deberas escribir la etiqueta STYLE para iniciar el metodo</p></p><br>
 	   <p>Forma de agregarlo:</p>
-	   <img src="https://programmerclick.com/images/775/ce96f810bcb54609e9e63340d953789f.png" title="css interno">
+	   <img style="width:370px;" src="https://programmerclick.com/images/775/ce96f810bcb54609e9e63340d953789f.png" title="css interno">
 	  
 	  	<p>Estilos en linea: Los estilos en linea son los que se usan de prioridad mas alta para sobreescritura de estilos, los puedes usar en etiquetas que ya tengan estilos pero requieras cambiar un atributo de estas sin alterar los demas estilos.</p><br>
 
 	  	<p>Forma de agregarlo:</p>
-	  	<img src="https://miro.medium.com/max/1400/1*vMDthM9qBLsONvClseM_ew.png">
+	  	<img style="width:370px;" src="https://miro.medium.com/max/1400/1*vMDthM9qBLsONvClseM_ew.png">
+		</div>
+
+   <br><br>
+	  <!--EJEMPLO DIDACTICO AUTOCOMPLETADO-->
+	   <p id="titulop">AHORA COMPLETA EL SIGUIENTE ENUNCIADO Y REVISALO SI ESTA CORRECTO:</p>
+	   <button onclick="exeHiddenShow()" id="btn-e">OCULTAR/REVELAR INFORMACION</button>
+	   <div>
+	   <p>Nombra el tipo de estilos que se escribe en la linea del elemento html como el h1 </p><input id="text11" type="text"><p style="font-size: 12px;width: 24%;" id="resc1"></p><p> son los que tienen mayor prioridad.</p><br>
+
+	   <p>Nombra el tipo de estilos requiere escribirse la etiqueta Style para aplicarlos </p><input id="text22" type="text"><p style="font-size: 12px;width: 24%;" id="resc2"></p><br>
+	    </div>
 
 		<br><br><p>
 	   ENLACES RECOMENDADOS SOBRE EL TEMA:
@@ -135,14 +147,7 @@
 	   		<img style="margin: 1px 4px -6px;" src="https://cdn-icons-png.flaticon.com/512/919/919826.png"><a target="_blank" href="https://www.naiarafernandez.com/conceptos-basicos-css/#:~:text=CSS%20significa%20Cascading%20Style%20Sheets,se%20almacenan%20en%20archivos%20CSS.">CSS Conceptos Basicos</a>
 	   	</div>
 	   	
-	   	<!---
-libro:https://www.iconpacks.net/icons/2/free-opened-book-icon-3169-thumb.png
-diagrama:https://cdn-icons-png.flaticon.com/512/1172/1172356.png
-html:https://cdn-icons-png.flaticon.com/512/919/919827.png
-css:https://cdn-icons-png.flaticon.com/512/919/919826.png
-js:https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg
-sintax:https://icons-for-free.com/iconfiles/png/512/programming+tags+icon-1320087273222563498.png
-	   		--->
+	   
 	   </div>
 	 </p>
 	 </article>
@@ -168,6 +173,54 @@ function closeNav() {
   document.getElementById("OpenMenu").style.display="block";
   document.getElementById("cerrar").style.display="none";
 }
+
+//CAMPOS DE TEXTO QUIZ
+var ocultodiv = document.getElementById("oculto");
+var respuestac= document.getElementById("resc");
+var clics = 0;
+var correcta= "en linea"; 
+document.getElementById("text11").addEventListener("keyup", compararResultados);
+
+var correcta2= "internos"; 
+document.getElementById("text22").addEventListener("keyup", compararResultados);
+
+function exeHiddenShow(){
+	if (clics == 0) {
+		console.log("mostrar");
+		ocultodiv.style.display="none";
+		clics=1;
+	}else{
+		console.log("ocultar");
+		ocultodiv.style.display="block";
+		clics=0;
+	}
+}
+
+function compararResultados(){
+	
+	if(text11.value == correcta){
+		text11.style.borderColor= "green";
+		resc1.innerHTML ="ES: CORRECTO !!";
+		resc1.style.backgroundColor="green";
+	}
+	else{
+		text11.style.borderColor= "red";
+		resc1.style.backgroundColor="red";
+		resc1.innerHTML ="ES: INCORRECTO !!";
+	}
+	if(text22.value == correcta2){
+		text22.style.borderColor= "green";
+		resc2.innerHTML ="ES: CORRECTO !!";
+		resc2.style.backgroundColor="green";
+	}
+	else{
+		text22.style.borderColor= "red";
+		resc2.style.backgroundColor="red";
+		resc2.innerHTML ="ES: INCORRECTO !!";
+	}
+
+}
+
 </script>
 </body>
 </html>

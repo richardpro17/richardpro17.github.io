@@ -87,6 +87,7 @@
 		<div><span id="directorio-t">DIAGRAMAS DE FLUJO</span></div>
 	<h2 id="section-title">Estructuras y parte de un diagrama de flujo</h2>
 	 <article>
+	 	<div id="oculto">
 	   <p>Para poder dar inicio estos diagramas cada parte del proceso la representa una figura debemos entender que
 	   cada cabeza es un mundo diferentes, siempre puede haber ligeras y extremas variaciones de diagramas dependiendo no solo su proposito,
 	   sino tambien de las personaso o individuo que lo realizo y cual es su forma de pensar.</p><br><br>
@@ -96,37 +97,66 @@
 	   <p>Una vez sabido esto explicaremos de forma sencilla y breve con puro estilo cada figura y sus usos, tambien te diremos cuales son las mas comunes de usar:</p>
 	   
 	   <p>
-	   <h2>TERMINAL:</h2>
-	   <p>Este simbolo es como un rectangulo u ovalo estirado, este simbolo solo se coloca en el principio del diagrama y el final de este.</p><br><br>
-	   <!-- IMAGEN Y EJEMPLO -->
+	   <h2 id="section-title" style="font-size: 24px">TERMINAL:</h2>
+	   <p>Este simbolo es como un rectangulo u ovalo estirado, este simbolo solo se coloca en el principio del diagrama y el final de este.
+	   	<div style="width: 150px;"><img style="width: 170px;margin: 25px 0px -8px 280px; "src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Flowchart_Terminal.svg/1200px-Flowchart_Terminal.svg.png"></div>
+	   </p><br><br>
 	   
-	   <h2>LINEAS DE FLUJO:</h2>
-	   <p>Las lineas indican el flujo del diagrama señalando los simbolos (conectando), de preferencia van de arriba hacia abajo y de izquierda a derecha.</p><br><br>
-	   <!-- IMAGEN Y EJEMPLO -->
+	   <h2 id="section-title" style="font-size: 24px">LINEAS DE FLUJO:</h2>
+	   <p>Las lineas indican el flujo del diagrama señalando los simbolos (conectando), de preferencia van de arriba hacia abajo y de izquierda a derecha.</p><div style="width: 150px;"><img style="width: 170px;margin: 25px 0px -8px 280px; "src="https://ecomputerconcepts.com/wp-content/uploads/2020/12/FLowlines.jpg"></div>
+	   </p><br><br>
 	   
-	   <h2>ENTRADA Y SALIDA DE DATOS:</h2>
-	   <p>Esta figura llamada paralelogramo designa la entrada de datos (variables) y salida de estas del problema en el diagrama de flujo.</p><br><br>
-	   <!-- IMAGEN Y EJEMPLO -->
+	   <h2 id="section-title" style="font-size: 24px">ENTRADA Y SALIDA DE DATOS:</h2>
+	   <p>Esta figura llamada paralelogramo designa la entrada de datos (variables) y salida de estas del problema en el diagrama de flujo.
+		<div style="width: 150px;"><img style="width: 170px;margin: 25px 0px -8px 280px; "src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Flowchart_input_output_symbol.svg/720px-Flowchart_input_output_symbol.svg.png"></div>
+	   </p><br><br>
 	   
-	   <h2>PROCESO:</h2>
-	   <p>El simbolo del rectangulo o cuadro representa las operacion aritmeticas que realizaran dentro de un momento del diagrama (suma, restas, multiplicacion y division)</p><br><br>
-	   <!-- IMAGEN Y EJEMPLO -->
+	   <h2 id="section-title" style="font-size: 24px">PROCESO:</h2>
+	   <p>El simbolo del rectangulo o cuadro representa las operacion aritmeticas que realizaran dentro de un momento del diagrama (suma, restas, multiplicacion y division)
+	   	<div style="width: 150px;"><img style="width: 170px;margin: 25px 0px -8px 280px; "src="https://images.vexels.com/media/users/3/139257/isolated/lists/b8fa8f291632f8fe68842e4fb100d8e0-forma-de-rect-ngulo-cuadrado.png"></div>
+	   </p><br><br>
 	   
-	   <h2>ROMBO DE DECISIONES:</h2>
-	   <p>El simbolo del rombo en los diagramas de flujo ayuda a tomar decisiones mediante un SI/NO (if/else) y se pueden separar sus lineas de flujos en cualquiera de sus extremos para continuar con el dibujo del diagrama.</p><br><br>
-	   <!-- IMAGEN Y EJEMPLO -->
-	   
-	   <h2>LINEAS DE FLUJO:</h2>
-	   <p>Las lineas indican el flujo del diagrama señalando los simbolos (conectando), de preferencia van de arriba hacia abajo y de izquierda a derecha.</p><br><br>
-	   <!-- IMAGEN Y EJEMPLO -->
-	   
-	   
-	   <!--
-	   https://sites.google.com/site/procesosdemanufacturaetitc/manufactura/diagramas-de-flujo-caracteristicas-y-tipos
-	   https://asana.com/es/resources/what-is-a-flowchart
-	   https://www.programiz.com/article/flowchart-programming -->
-	   
-	   </p>
+	   <h2 id="section-title" style="font-size: 24px">ROMBO DE DECISIONES:</h2>
+	   <p>El simbolo del rombo en los diagramas de flujo ayuda a tomar decisiones mediante un SI/NO (if/else) y se pueden separar sus lineas de flujos en cualquiera de sus extremos para continuar con el dibujo del diagrama.
+	   	<div style="width: 150px;"><img style="width: 170px;margin: 25px 0px -8px 280px; "src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Flowchart_Decision.svg/1024px-Flowchart_Decision.svg.png"></div>
+	   </p><br><br>
+		</div>
+
+	    <p id="titulop">ADIVINA ADIVINADOR.... acierta correctamente a los simbolos de los diagramas de flujp. SUERTE!!!</p>
+	    <button onclick="exeHiddenShow()" id="btn-e">OCULTAR/REVELAR INFORMACION</button>
+	    <div>
+	  	<label>Esta figura es para tomar decisiones if/else?</label>
+		<div style="width: 150px;"><img style="width: 50px;margin: 35px 0px 0px 28px; "src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Flowchart_Decision.svg/1024px-Flowchart_Decision.svg.png"></div>
+ 			<select name="select" id="select">
+ 				<option value="na">ELIGE</option>
+    		<option value="opt1">Si, lo es</option>
+   	 		<option value="opt2">No, de seguro no</option>
+  		</select>
+ 	 	<br><br>
+ 		</div>
+ 		<div>
+	  	<label>Como se llama este simbolo?</label>
+		<div style="width: 150px;"><img style="width: 150px;margin: 35px 0px 0px 28px; "src="https://ecomputerconcepts.com/wp-content/uploads/2020/12/FLowlines.jpg"></div>
+ 			<select name="select2" id="select2">
+ 				<option value="na">ELIGE</option>
+    		<option value="opt11">Flechas</option>
+   	 		<option value="opt22">Lineas de flujo</option>
+   	 		<option value="opt33">Linea Amarilla</option>
+  		</select>
+ 	 	<br><br>
+ 		</div>
+ 		<div>
+	  	<label>Este simbolo sirve para iniciar el diagrama de flujo?, sino es asi, escribe su nombre correctamente en el campo de texto</label>
+		<div style="width: 150px;"><img style="width: 50px;margin: 35px 0px 0px 28px;  "src="https://images.vexels.com/media/users/3/139257/isolated/lists/b8fa8f291632f8fe68842e4fb100d8e0-forma-de-rect-ngulo-cuadrado.png"></div>
+ 			<select name="select3" id="select3">
+ 				<option value="na">ELIGE</option>
+    		<option value="opt111">Si, sirve para eso</option>
+   	 		<option value="opt222">NO, escribe su nombre abajo</option>
+   	 		<input id="text11" type="text"><p style="font-size: 12px;width: 24%;" id="resc"></p>
+  		</select><br><br>
+  		<button onclick="validar1()" class="send-btn ml-md-1">Checar</button>
+ 		</div>
+	  <span id ="MostrarRF"></span>
 	   
 	   <br><br><p>
 	   ENLACES RECOMENDADOS SOBRE EL TEMA:
@@ -141,14 +171,6 @@
 	   		<img style="margin: 1px 4px -6px;"src="https://cdn-icons-png.flaticon.com/512/1172/1172356.png"><a target="_blank" href="https://www.programiz.com/article/flowchart-programming">Flowchart In Programming</a>
 	   	</div>
 	   	
-	   	<!---
-libro:https://www.iconpacks.net/icons/2/free-opened-book-icon-3169-thumb.png
-diagrama:https://cdn-icons-png.flaticon.com/512/1172/1172356.png
-html:https://cdn-icons-png.flaticon.com/512/919/919827.png
-css:https://cdn-icons-png.flaticon.com/512/919/919826.png
-js:https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg
-sintax:https://icons-for-free.com/iconfiles/png/512/programming+tags+icon-1320087273222563498.png
-	   		--->
 	   </div>
 	 </p>
 	 </article>
@@ -174,6 +196,70 @@ function closeNav() {
   document.getElementById("OpenMenu").style.display="block";
   document.getElementById("cerrar").style.display="none";
 }
+//OCULTAR INFO
+var ocultodiv = document.getElementById("oculto");
+var clics = 0;
+
+function exeHiddenShow(){
+	if (clics == 0) {
+		console.log("mostrar");
+		ocultodiv.style.display="none";
+		clics=1;
+	}else{
+		console.log("ocultar");
+		ocultodiv.style.display="block";
+		clics=0;
+	}
+}
+
+//QUIZ
+var resf1 = document.getElementById("MostrarRF");
+
+var totalAciertos= 0;
+function validar1(){
+	var select1 = document.getElementById("select").value;
+	var select2 = document.getElementById("select2").value;
+	var select3 = document.getElementById("select3").value;
+
+	if(select1 == "opt1"){
+		totalAciertos++;
+	}
+	if(select2 == "opt22"){
+		totalAciertos++;
+	}
+	if(select3 == "opt222"){
+		totalAciertos++;
+	}
+		resf1.style.display="block";
+		if(totalAciertos == 3){
+			resf1.style.backgroundColor="green";
+		}else{
+			resf1.style.backgroundColor="red";
+		}
+		resf1.innerHTML ="PUNTAJE CORRECTO: "+totalAciertos;
+		console.log(totalAciertos);
+		totalAciertos=0;
+//https://www.quora.com/How-do-I-do-percentages-in-JavaScript
+}
+
+//COMPARAR RESULTADOS
+var respuestac= document.getElementById("resc");
+var correcta= "proceso";
+document.getElementById("text11").addEventListener("keyup", compararResultados);
+function compararResultados(){
+	
+	if(text11.value == correcta){
+		text11.style.borderColor= "green";
+		resc.innerHTML ="ES: CORRECTO !!";
+		resc.style.backgroundColor="green";
+	}
+	else{
+		text11.style.borderColor= "red";
+		resc.style.backgroundColor="red";
+		resc.innerHTML ="ES: INCORRECTO !!";
+	}
+}
+
 </script>
 </body>
 </html>

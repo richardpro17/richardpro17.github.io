@@ -86,6 +86,7 @@
 		<div><span id="directorio-t">SINTAXIS EN LA PROGRAMACION</span></div>
 	<h2 id="section-title">Variables</h2>
 	 <article>
+	 	<div id="oculto">
 	   <p>Aprenderas lo basico como el concepto de variables y su uso, tipos de estas para usarla en los lenguajes de programacion de forma global sin tener que volver a repasarlas. </p><br>
 
 	   <p>Para empezar una variable se define como una caracteristica o condicion que esta sujeta a siempre tener cambios, la variable se usa para asumir el valor especifico de uno o varios individuos. <br>Estas variables esta formada por un espacion en el sistema de almacenaje de un ordenador y un identificador para nombrar esta variable.</p><br>
@@ -103,6 +104,17 @@
 	   	<li>5.-Arreglos: Estas variables sirven para almacenar mas de un elemento junto con otras varialbes, solo requieres redactarlo con corchetes y separarlos con una coma como en este ejemplo:<br> Numeros[]= (2, 5, 10, 32, 100)</li>
 	   	<li>6.-Objetos: Es para agregar objetos y asignarles sus propiedades , la diferencia de esta es la forma en la que se declara por ejemplo <br> {color: verde}</li>
 	   </ul>
+	</div>
+
+	<br><br>
+		<!--EJEMPLO DIDACTICO AUTOCOMPLETADO-->
+	   <p id="titulop">AHORA COMPLETA EL SIGUIENTE ENUNCIADO Y REVISALO SI ESTA CORRECTO:</p>
+	   <button onclick="exeHiddenShow()" id="btn-e">OCULTAR/REVELAR INFORMACION</button>
+	   <div>
+	   <p>Completa el tipo de variable Numeros[]= (2,5,100</p><input style="width: 20px;" id="text11" type="text"><p style="font-size: 12px;width: 24%;" id="resc1"></p><br>
+
+	   <p>Completa el tipo de variable  de cadena siguiendo del nombre "palabra"</p><input style="width: 100px;" id="text22" type="text"><p style="font-size: 12px;width: 24%;" id="resc2"></p><p>="Hola"</p><br>
+	    </div>
 
 
 		<br><br><p>
@@ -149,6 +161,53 @@ function closeNav() {
   document.getElementById("LateralMenu").style.width = "0";
   document.getElementById("OpenMenu").style.display="block";
   document.getElementById("cerrar").style.display="none";
+}
+
+//QUIZ FINAL
+var ocultodiv = document.getElementById("oculto");
+var respuestac= document.getElementById("resc");
+var clics = 0;
+var correcta= ")"; 
+document.getElementById("text11").addEventListener("keyup", compararResultados);
+
+var correcta2= "string palabra"; 
+document.getElementById("text22").addEventListener("keyup", compararResultados);
+
+function exeHiddenShow(){
+	if (clics == 0) {
+		console.log("mostrar");
+		ocultodiv.style.display="none";
+		clics=1;
+	}else{
+		console.log("ocultar");
+		ocultodiv.style.display="block";
+		clics=0;
+	}
+}
+
+function compararResultados(){
+	
+	if(text11.value == correcta){
+		text11.style.borderColor= "green";
+		resc1.innerHTML ="ES: CORRECTO !!";
+		resc1.style.backgroundColor="green";
+	}
+	else{
+		text11.style.borderColor= "red";
+		resc1.style.backgroundColor="red";
+		resc1.innerHTML ="ES: INCORRECTO !!";
+	}
+	if(text22.value == correcta2){
+		text22.style.borderColor= "green";
+		resc2.innerHTML ="ES: CORRECTO !!";
+		resc2.style.backgroundColor="green";
+	}
+	else{
+		text22.style.borderColor= "red";
+		resc2.style.backgroundColor="red";
+		resc2.innerHTML ="ES: INCORRECTO !!";
+	}
+
 }
 </script>
 </body>

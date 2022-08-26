@@ -104,16 +104,18 @@
 	   <p>La mayoria de paginas web siempre mantienen una formalidad en sus estructura para que sea facil, accesible para los desarrolladores y la experiencia de usuario.</p><br>
 	   
 	   <p>Encabezado: La parte de arriba que por lo general contiene el titulo de la pagina de forma impresionante, logo de tu marca etc, inclusive un lema, no suele
-	   alterarse dentro de la misma pagina web.</p><br>
+	   alterarse dentro de la misma pagina web.
+	 	<br><pre id="insertCode1"></pre></p><br>
 	   
-	   <p>Menu de navegacion: La parte donde se acomoda desde un buscador, un menu interactivo para que los usuarios naveguen de forma sencilla y rapida dentro del sitio web.</p><br>
+	   <p>Menu de navegacion: La parte donde se acomoda desde un buscador, un menu interactivo para que los usuarios naveguen de forma sencilla y rapida dentro del sitio web.
+	   	<br><pre id="insertCode2"></pre></p><br>
 		
-	   <p>Contenido principal: Es la gran parte de informacion que abarca la mayoria de la pagima, esta parte siempre esta en constante cambio dependiendo los subtemas o temas del sitio.</p>
+	   <p>Contenido principal: Es la gran parte de informacion que abarca la mayoria de la pagima, esta parte siempre esta en constante cambio dependiendo los subtemas o temas del sitio.<br><pre id="insertCode3"></pre></p>
 	   <br>
 	   <p>Barra Lateral: La barra lateral se usa como menu de navegacion o tambien algun tipo de informacion adicional, publicida etc, la mayoria de veces el uso que se la esta relacionado
-	   con el contenido principal mostrado en ese momento.</p><br>
+	   con el contenido principal mostrado en ese momento.<br><pre id="insertCode4"></pre></p><br>
 	   
-	   <p>Pie de pagina: el pie de pagina la mayoria de veces esta hasta abajo, contiene letras pequeñas e informacion relevante de contacto del autor o marca, no suele ser tan importante pero forma parte del contenido de una pagina web.</p><br>
+	   <p>Pie de pagina: el pie de pagina la mayoria de veces esta hasta abajo, contiene letras pequeñas e informacion relevante de contacto del autor o marca, no suele ser tan importante pero forma parte del contenido de una pagina web.<br><pre id="insertCode5"></pre></p><br>
 	   <br>
 	   <img src="https://i.pinimg.com/originals/f3/18/55/f31855b8f08e7687350b9fc49a77d839.gif" title="Estructura de una pagina" ><br><br>
 
@@ -126,16 +128,9 @@
 
 	   	<p>1.-La cabecera contiene informacion destinada para el navegador que queda oculta al usuario. Su etiqueta es "HEAD" encerrado en <"Head>".</p><br>
 
-	   	<p>2.-El cuerpo del documento Body es el que el usuario puede ver si etiqueta es <"Body>".</p><br>
+	   	<p>2.-El cuerpo del documento Body es el que el usuario puede ver si etiqueta es 
+	   	<br><pre id="insertCode"></pre></p><br>
 	   	</p>
-
-	   	<p>ALGUNAS DE LAS ETIQUETAS MAS USADAS: </p>
-
-	   	<img src="https://tutorial.eyehunts.com//wp-content/uploads/2019/03/HTML-P-tag-HTML-paragraph-tag-break-font-size-line-space-indent.png" title="Etiqueta <p>">
-
-	   	<img src="https://seranking.com/es/blog/wp-content/uploads/sites/13/2021/05/jerarquia-por-niveles-encabezados-html.png" title="Etiqueta <h> de titulos">
-
-	   	<img src="https://media.geeksforgeeks.org/wp-content/uploads/20210821160706/Capture1.PNG" title="div tag">
 
 
 	<br><br><p>
@@ -190,6 +185,24 @@ function closeNav() {
   document.getElementById("OpenMenu").style.display="block";
   document.getElementById("cerrar").style.display="none";
 }
+
+//INSERTAR CODIGO
+var insert = document.getElementById("insertCode");
+var insert1 = document.getElementById("insertCode1");
+var insert2 = document.getElementById("insertCode2");
+var insert2 = document.getElementById("insertCode3");//section
+var insert3 = document.getElementById("insertCode4");//aside
+var insert4 = document.getElementById("insertCode5");//footer
+
+
+insert.innerText="<body></body>";
+insert1.innerText="<head></head>";
+insert2.innerText="<nav></nav>";
+insert3.innerText="<section></section>";
+insert4.innerText="<aside></aside>";
+insert5.innerText="<footer></footer>";
+
+
 </script>
 </body>
 </html>
